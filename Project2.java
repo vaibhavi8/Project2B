@@ -3,9 +3,10 @@ import java.util.*;
 public class Project2{
     public static void main(String[]args){
         //the verticies that have no paths to other vertices are considered to be 1000 (a positive big number representing infinite) instead of 0
-        int[][] graph = { {0,7,12,1000,1000,1000}, {1000,0,2,9,1000,1000}, {1000,1000,0,1000,10,1000}, {1000,1000,1000,0,1000,1}, {1000,1000,1000,4,0,5}, {1000,1000,1000,1000,1000,0} };
+        int inf = 10000000;
+        int[][] graph = { {0,7,12,inf,inf,inf}, {inf,0,2,9,inf,inf}, {inf,inf,0,inf,10,inf}, {inf,inf,inf,0,inf,1}, {inf,inf,inf,4,0,5}, {inf,inf,inf,inf,inf,0} };
         int [][] graphB = 
-        {{0,3,1000,7},{8,0,2,1000},{5, 1000, 0, 1},{2, 1000, 1000, 0}};
+        {{0,3,inf,7},{8,0,2,inf},{5, inf, 0, 1},{2, inf, inf, 0}};
         for(int i = 0; i < 6; i++){
             System.out.println(Arrays.toString(graph[i]));
         }
