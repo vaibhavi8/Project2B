@@ -44,7 +44,12 @@ public class Project2{
         //prints out the graph, and ensures that graph prev replicates a 
         for(int i = 0; i < prev.length; i++){  
             for(int j =0; j<prev[0].length;j++){
-                System.out.print(prev[i][j] + " ");
+                if(prev[i][j]>1000){
+                    System.out.print("inf ");
+                }
+                else{
+                    System.out.print(prev[i][j] + " ");
+                }
             }
             System.out.println();
         }
@@ -66,7 +71,12 @@ public class Project2{
         //prints out the shortest paths for the directed weighted graphs
         for(int i = 0; i < curr.length; i++){
             for(int j = 0; j<curr[0].length;j++){
-                System.out.print(curr[i][j] + " ");
+                if(curr[i][j]>1000){
+                    System.out.print("inf ");
+                }
+                else{
+                    System.out.print(curr[i][j] + " ");
+                }
             }
             System.out.println();
         }
