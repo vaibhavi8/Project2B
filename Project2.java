@@ -28,8 +28,42 @@ public class Project2{
 
     }
     public static int[][] createGraphSizeN(int n){
-        int min = 0;
+        int min = 1;
         int max = 200;
+        int[][] matrix = new int[n][n];
+        for(int i = 0; i<n; i++){
+          for(int j = 0; j<n; j++){
+            if(i==j){
+                  matrix[i][j] = 0;
+            }
+            else{
+                int randomValue = (int) Math.floor(Math.random()*(max-min+1)+min);
+                matrix[i][j] = randomValue;
+            } 
+          }
+        }
+        return matrix;
+    }
+    public static int[][] createSparseGraphSizeN(int n){
+        int min = 70;
+        int max = 200;
+        int[][] matrix = new int[n][n];
+        for(int i = 0; i<n; i++){
+          for(int j = 0; j<n; j++){
+            if(i==j){
+                  matrix[i][j] = 0;
+            }
+            else{
+                int randomValue = (int) Math.floor(Math.random()*(max-min+1)+min);
+                matrix[i][j] = randomValue;
+            } 
+          }
+        }
+        return matrix;
+    }
+    public static int[][] createDenseGraphSizeN(int n){
+        int min = 1;
+        int max = 129;
         int[][] matrix = new int[n][n];
         for(int i = 0; i<n; i++){
           for(int j = 0; j<n; j++){
