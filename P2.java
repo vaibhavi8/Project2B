@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public class P2 {
+public class combined {
   public static int[][] dijkstra(int a[][]){
     int nodeCount = a[0].length;
     // System.out.println("length is " + nodeCount);
@@ -491,7 +491,7 @@ public static int[][] floydWarshallPrint(int a[][]){
     int[][] dense = denseCreate(size);
     //sparse
     startTime = System.nanoTime();
-    for(int i = 0; i < size; i++){
+    for(int i = 0; i < 10; i++){
       dijkstra(sparse);
     }
     endTime = System.nanoTime();
@@ -499,7 +499,7 @@ public static int[][] floydWarshallPrint(int a[][]){
     System.out.println("Dijkstra took " + timeTook/10 + " seconds for 10 interations of size " + size + " for sparse ");
     //dense
     startTime = System.nanoTime();
-    for(int i = 0; i < size; i++){
+    for(int i = 0; i < 10; i++){
       dijkstra(dense);
     }
     endTime = System.nanoTime();
@@ -511,7 +511,7 @@ public static int[][] floydWarshallPrint(int a[][]){
     int[][] denseGraph = createDenseGraphSizeN(size);
     //sparse
     startTime = System.nanoTime();
-    for(int i =0; i<size;i++){
+    for(int i =0; i< 10;i++){
       floydWarshall(sparseGraph);
 
     }
@@ -521,7 +521,7 @@ public static int[][] floydWarshallPrint(int a[][]){
     
     //dense
     startTime = System.nanoTime();
-    for(int i =0; i<size;i++){
+    for(int i =0; i< 10;i++){
       floydWarshall(denseGraph);
 
     }
