@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public class combined {
+public class P2 {
   public static int[][] dijkstra(int a[][]){
     int nodeCount = a[0].length;
     // System.out.println("length is " + nodeCount);
