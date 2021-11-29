@@ -109,7 +109,7 @@ public class P2 {
       int addTrack = 1;
       backtrack[addTrack] = backNode;
       looking = backNode;
-      while(backNode != 0){
+      while(backNode != 0 && addTrack < nodeCount-2){
         addTrack++;
         // System.out.println("add is "+ addTrack);
         looking = backNode;
